@@ -1,6 +1,6 @@
 # COIN_O_MATIC_FeatureExtrac
 
-This is a python implementation of the feature extraction technique used in the 2006 paper https://lvdmaaten.github.io/publications/papers/MuscleCIS_2006.pdf, written by L.J.P. van der Maaten and P.J. Boon. 
+This is a Python implementation of the feature extraction technique used in the 2006 paper https://lvdmaaten.github.io/publications/papers/MuscleCIS_2006.pdf, written by L.J.P. van der Maaten and P.J. Boon. 
 
 
 Example usage:
@@ -13,6 +13,8 @@ for FileName in FileNameHolder_Train:
     Train_X.append(HistogramHolder)
 ```
 
-*Do not* change the SplitIntoConcentric() parameters unless you know what you're doing. The FindCoin() function already resizes the image to a 500x500 size, so there is no need to change anything here. 
+*Do not* change the SplitIntoConcentric() parameters unless you know what you're doing. The FindCoin() function already resizes the image to a 500x500 size, so there is no need to change anything there. 
 
-Near-zero preprocessing is required, the back-end will take care of segmenting the coin, applying the correct filters, and everything else. Bring up an issue if you have any questions/requests. 
+Zero preprocessing is required, the back-end will take care of segmenting the coin, applying the correct filters, and everything else. Bring up an issue if you have any questions/requests. 
+
+The returned array should be in shape (X, 5400), where X is the number of coins you pass in.
