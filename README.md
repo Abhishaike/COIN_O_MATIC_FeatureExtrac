@@ -1,4 +1,4 @@
-# COIN_O_MATIC_FeatureExtrac1
+# COIN_O_MATIC_FeatureExtrac
 
 This is a python implementation of the feature extraction technique used in the 2006 paper https://lvdmaaten.github.io/publications/papers/MuscleCIS_2006.pdf, written by L.J.P. van der Maaten and P.J. Boon. 
 
