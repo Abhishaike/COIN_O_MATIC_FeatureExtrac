@@ -17,4 +17,4 @@ for FileName in FileNameHolder_Train:
 
 Zero preprocessing is required, the back-end will take care of segmenting the coin, applying the correct filters, and everything else. Bring up an issue if you have any questions/requests. 
 
-The returned array should be in shape (X, 5400), where X is the number of coins you pass in.
+*NO* dimensional reduction is done on the returned 5400-dimensional vector. It is highly recommended to use dimensional reduction (the paper reccomend S-PCA to reduce the vector to 200 dimensions).
