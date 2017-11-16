@@ -2,8 +2,7 @@ from matplotlib import pyplot as plt
 import cv2
 from PIL import Image
 import numpy as np
-
-
+    
 def FindCoin(FileName):
     COIN_IMAGE = cv2.imread(FileName)
     COIN_IMAGE = cv2.resize(COIN_IMAGE, (500, 500))
@@ -74,3 +73,6 @@ def SplitIntoConcentric(radius, COIN_IMAGE, Center_Y, Center_X): #height and wid
         Temp = []
 
 return AllAngular
+
+
+    
