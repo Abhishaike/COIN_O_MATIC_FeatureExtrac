@@ -14,3 +14,5 @@ for FileName in FileNameHolder_Train:
 ```
 
 *Do not* change the SplitIntoConcentric() parameters unless you know what you're doing. The FindCoin() function already resizes the image to a 500x500 size, so there is no need to change anything here. 
+
+Near-zero preprocessing is required, the back-end will take care of segmenting the coin, applying the correct filters, and everything else. Bring up an issue if you have any questions/requests. 
